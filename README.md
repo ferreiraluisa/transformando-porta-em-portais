@@ -1,5 +1,3 @@
-# Transformando porta em portais
-Trabalho final da disciplina INF 492 - Introdução a visão computacional e redes convolucionais da Universidade Federal de Viçosa.
 <a>
     <img src="https://cdn.discordapp.com/attachments/729689711416967239/844210892916523018/Ygemzly2XsP3gzFbXjFyExvD00B3rBvPbDEOoNOB-4uL4NLF1YKM6kiypik1H4koNc5_sNVAAAy_PDq_kmh_CRmn1dvC1uyeckCs.png" alt="UFV logo" title="UFV" align="right" height="55" />
 </a>

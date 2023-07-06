@@ -23,11 +23,11 @@
 &emsp;&emsp;Projeto final apresentado à disciplina de Introdução a Visão Computacional e Redes Convolucionais, de código INF 492, ministrada pelo professor Michel S. Melo, como requisito parcial para aprovação na disciplina.
 
 ## Introdução
-&emsp;&emsp;O trabalho proposto é um chatbot responsável por fazer triagem em hospitais para diferenciar os casos de COVID entre os seguintes casos com sintomas semelhantes: alergia, resfriado e gripe. Além disso, no final, ele gera uma ficha médica do paciente com informações pessoais, como nome, idade, profissão, os sintomas, quantos dias ele está doente e resultado da predição feito com técnicas de inteligência artificial. 
-&emsp;&emsp;Para conseguir usar o chatBot, é necessário rodar randomforest_knn.py e trainingBot.py antes de rodar o chatBot.py.
+&emsp;&emsp;O trabalho proposto tem como objetivo combinar quadros clássicos e contemporâneos com o mundo externo, mudando o interior de uma porta com auxílio de detecção de objetos e transferência arbitrária de estilo.  
  
 ## Metodologia
- 
+&emsp;&emsp; Para detecção de portas, utilizamos um modelo pré-treinado, a YOLO. Para obter resultados mais precisos ao modificar o interior da porta, adotamos a abordagem de segmentação semântica utilizando o YOLOv8. Retreinamos a rede utilizando o conjunto de dados DeepDoors 2. As labels no formato YOLO podem ser encontradas no arquivo labels_dataset.zip. Além disso, disponibilizamos o código "label.py" que automatiza a obtenção das labels a partir das labels fornecidas pelo conjunto de dados.
+&emsp;&emsp; Para transferência arbitrária de estilo, utilizamos ...
 
 ## Conclusão
 

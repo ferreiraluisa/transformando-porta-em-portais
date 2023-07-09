@@ -38,4 +38,6 @@
 
 ## Responsáveis
 - [Luísa de Souza Ferreira](https://github.com/ferreiraluisa)
+- [Ana Clara Osias](https://github.com/AnaClaraOsias)
+- [Lucas Vieira](https://github.com/ls-Vieira)
 

@@ -24,8 +24,11 @@ treinamento supervisionado. Foram utilizados modelos propostos para problemas de
  
 ## Metodologia
 &emsp;&emsp; Para detecção de portas, utilizamos um modelo pré-treinado, a YOLO. Para obter resultados mais precisos ao modificar o interior da porta, adotamos a abordagem de segmentação semântica utilizando o YOLOv8. Retreinamos a rede utilizando o conjunto de dados [DeepDoors 2](https://github.com/gasparramoa/DeepDoors2). As labels no formato YOLO podem ser encontradas para download nesse [link](https://drive.google.com/drive/folders/11SRtS36G7H3PK0_CZ1WIn5ZEU3lJg1Ew?usp=sharing). 
+<br>
 &emsp;&emsp; Para realizar uma transferência de estilo, inicialmente adotamos uma abordagem que permitia a [transferência arbitrária](https://arxiv.org/abs/1705.06830) de estilo a partir de qualquer foto fornecida. Nosso objetivo principal era alcançar essa funcionalidade, onde a rede pré-treinada seria capaz de transferir o estilo de uma foto selecionada. No entanto, descobrimos que essa abordagem exigia um custo computacional considerável, consumindo cerca de 3GB de VRAM apenas para realizar a transferência de estilo. Dado que nossa intenção era executar a transferência em tempo real, tornou-se importante ter um processo local, uma vez que o Google Colab apresentava atrasos na exibição das fotos capturadas pela webcam, além do próprio código já exigir um tempo considerável para ser executado em tempo real.
+<br>
 &emsp;&emsp; A fim de contornar esse problema, optamos por utilizar [rede pré-treinada com 16 estilos específicos](https://github.com/ryanwongsa/Real-time-multi-style-transfer) para estilização de imagens. Essa abordagem reduziu significativamente o consumo de VRAM para 1.6GB e diminuiu consideravelmente o tempo de execução. Como resultado, conseguimos executar o processo localmente no computador pessoal de um dos membros do grupo.
+<br>
 &emsp;&emsp; Para integrar a técnica YOLO com a transferência de estilo, a fim de estilizar apenas a parte interna de uma porta, utilizamos a segmentação semântica fornecida pelo YOLO e extraímos a máscara correspondente à moldura da porta. Em seguida, por meio de funções em Python, transformamos essa máscara em um polígono convexo fechado. Em seguida, aplicamos o polígono convexo à imagem original, restringindo a estilização à região interna delimitada pela máscara da moldura da porta.
 
 ## Conclusão 

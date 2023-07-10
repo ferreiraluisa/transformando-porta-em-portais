@@ -15,7 +15,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-model = YOLO('best-ml.pt')
+model = YOLO('best.pt')
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 num_styles = 16
@@ -122,6 +122,13 @@ cv2.namedWindow('Estilo em Tempo Real', cv2.WINDOW_NORMAL)
 
 # Define o tamanho da janela
 cv2.resizeWindow('Estilo em Tempo Real', 2400, 1800) 
+fps = captura.get(cv2.CAP_PROP_FPS)
+width = int(captura.get(cv2.CAP_PROP_FRAME_WIDTH))
+height = int(captura.get(cv2.CAP_PROP_FRAME_HEIGHT))
+# Definir as configurações do vídeo de saída
+codec = cv2.VideoWriter_fourcc(*'XVID')
+output_video = cv2.VideoWriter('output_video_path.mp4', codec, fps, (width, height))
+import time
 while True:
     # Lê o frame da captura
     ret, frame = captura.read()
@@ -129,8 +136,12 @@ while True:
     if not ret:
         break
     
+    # Chama a função de estilo para modificar o frame
+    inicio = time.time()
     frame = portal_img(frame)
-
+    final = time.time()
+    print(final - inicio)
+    output_video.write(frame)
     # Mostra o frame estilizado em uma janela chamada "Estilo em Tempo Real"
     cv2.imshow('Estilo em Tempo Real', frame)
 
@@ -139,4 +150,5 @@ while True:
         break
 
 # Libera a captura e fecha todas as janelas abertas
+output_video.release()
 cv2.destroyAllWindows()

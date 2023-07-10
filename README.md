@@ -11,10 +11,10 @@
   <img src="imagens/teste.png" width="400" alt="Foto A">
   <img src="imagens/vangogh.jpg" width="400" alt="Foto B">
 </p>
-<p align="center">
+<figure align="center">
   <img src="imagens/saida.jpg" width="800" alt="Foto C">
   <figcaption>Usando transferência arbitrária de estilo</figcaption>
-</p>
+</figure>
 
 
 ## Índice
@@ -38,6 +38,14 @@ treinamento supervisionado. Foram utilizados modelos propostos para problemas de
 &emsp;&emsp; A fim de contornar esse problema, optamos por utilizar [rede pré-treinada com 16 estilos específicos](https://github.com/ryanwongsa/Real-time-multi-style-transfer) para estilização de imagens. Essa abordagem reduziu significativamente o consumo de VRAM para 1.6GB e diminuiu consideravelmente o tempo de execução. Como resultado, conseguimos executar o processo localmente no computador pessoal de um dos membros do grupo.
 <br>
 &emsp;&emsp; Para integrar a técnica YOLO com a transferência de estilo, a fim de estilizar apenas a parte interna de uma porta, utilizamos a segmentação semântica fornecida pelo YOLO e extraímos a máscara correspondente à moldura da porta. Em seguida, por meio de funções em Python, transformamos essa máscara em um polígono convexo fechado. Em seguida, aplicamos o polígono convexo à imagem original, restringindo a estilização à região interna delimitada pela máscara da moldura da porta.
+
+<figure align="center">
+  <img src="imagens/teste.png" width="400" alt="Foto A">
+</figure>
+<figure align="center">
+  <img src="imagens/saida2.jpg" width="800" alt="Foto C">
+  <figcaption>Usando rede pré-treinada com estilos específicos<figcaption>
+</figure>
 
 ## Conclusão 
 &emsp;&emsp; Através da utilização da [rede pré-treinada com 16 estilos específicos](https://github.com/ryanwongsa/Real-time-multi-style-transfer) , fomos capazes de realizar o processo completo de detecção de portas e estilização do interior em uma média de  0.3 segundos de tempo de execução. Essa implementação foi realizada em um computador equipado com uma placa gráfica NVIDIA RTX 3050Ti, o que proporcionou um desempenho otimizado para a tarefa.

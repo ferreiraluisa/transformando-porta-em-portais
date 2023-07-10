@@ -1,0 +1,7 @@
+path: /content/gdrive/My Drive/Trabalho Final - INF420 492/TRAINAMENTO YOLO/data/
+train: images/train
+val: images/val
+test: images/test
+
+nc: 3
+names: ['closed','open','semi']

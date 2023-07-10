@@ -39,11 +39,11 @@ treinamento supervisionado. Foram utilizados modelos propostos para problemas de
 <br>
 &emsp;&emsp; Para integrar a técnica YOLO com a transferência de estilo, a fim de estilizar apenas a parte interna de uma porta, utilizamos a segmentação semântica fornecida pelo YOLO e extraímos a máscara correspondente à moldura da porta. Em seguida, por meio de funções em Python, transformamos essa máscara em um polígono convexo fechado. Em seguida, aplicamos o polígono convexo à imagem original, restringindo a estilização à região interna delimitada pela máscara da moldura da porta.
 
-<figure align="center">
+<p align="center">
     <img src="imagens/teste.png" width="400" alt="Foto A">
     <img src="imagens/saida2.jpg" width="400" alt="Foto C">
     <figcaption>Usando rede pré-treinada com estilos específicos<figcaption>
-</figure>
+</p>
 
 ## Conclusão 
 &emsp;&emsp; Através da utilização da [rede pré-treinada com 16 estilos específicos](https://github.com/ryanwongsa/Real-time-multi-style-transfer) , fomos capazes de realizar o processo completo de detecção de portas e estilização do interior em uma média de  0.3 segundos de tempo de execução. Essa implementação foi realizada em um computador equipado com uma placa gráfica NVIDIA RTX 3050Ti, o que proporcionou um desempenho otimizado para a tarefa.

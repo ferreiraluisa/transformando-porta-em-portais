@@ -7,7 +7,9 @@
 
 <h2 align = "center"> Transformando portas em portais: como detecção de objetos e transferência de estilo podem transformar imagens
  </h2>
-
+![Foto A](imagens/teste.png) | ![Foto B](imagens/vangogh.jpg)
+:-------------------------:|:-------------------------:
+![Foto C](imagens/saida.jpg) |
 
 ## Índice
 

@@ -11,10 +11,10 @@
   <img src="imagens/teste.png" width="400" alt="Foto A">
   <img src="imagens/vangogh.jpg" width="400" alt="Foto B">
 </p>
-<figure align="center">
+<p align="center">
   <img src="imagens/saida.jpg" width="800" alt="Foto C">
   <figcaption>Usando transferência arbitrária de estilo</figcaption>
-</figure>
+</p>
 
 
 ## Índice

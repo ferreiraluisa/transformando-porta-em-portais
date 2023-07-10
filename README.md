@@ -13,6 +13,7 @@
 </p>
 <p align="center">
   <img src="imagens/saida.jpg" width="800" alt="Foto C">
+  <figcaption>Usando transferência arbitrária de estilo</figcaption>
 </p>
 
 

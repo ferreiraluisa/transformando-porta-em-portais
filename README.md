@@ -40,11 +40,9 @@ treinamento supervisionado. Foram utilizados modelos propostos para problemas de
 &emsp;&emsp; Para integrar a técnica YOLO com a transferência de estilo, a fim de estilizar apenas a parte interna de uma porta, utilizamos a segmentação semântica fornecida pelo YOLO e extraímos a máscara correspondente à moldura da porta. Em seguida, por meio de funções em Python, transformamos essa máscara em um polígono convexo fechado. Em seguida, aplicamos o polígono convexo à imagem original, restringindo a estilização à região interna delimitada pela máscara da moldura da porta.
 
 <figure align="center">
-  <img src="imagens/teste.png" width="400" alt="Foto A">
-</figure>
-<figure align="center">
-  <img src="imagens/saida2.jpg" width="800" alt="Foto C">
-  <figcaption>Usando rede pré-treinada com estilos específicos<figcaption>
+    <img src="imagens/teste.png" width="400" alt="Foto A">
+    <img src="imagens/saida2.jpg" width="800" alt="Foto C">
+    <figcaption>Usando rede pré-treinada com estilos específicos<figcaption>
 </figure>
 
 ## Conclusão 

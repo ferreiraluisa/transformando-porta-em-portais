@@ -41,7 +41,7 @@ treinamento supervisionado. Foram utilizados modelos propostos para problemas de
 
 <figure align="center">
     <img src="imagens/teste.png" width="400" alt="Foto A">
-    <img src="imagens/saida2.jpg" width="800" alt="Foto C">
+    <img src="imagens/saida2.jpg" width="400" alt="Foto C">
     <figcaption>Usando rede pré-treinada com estilos específicos<figcaption>
 </figure>
 

@@ -36,9 +36,9 @@ treinamento supervisionado. Foram utilizados modelos propostos para problemas de
 
 
 ## Referências
-https://github.com/gasparramoa/DeepDoors2
-https://arxiv.org/abs/1705.06830
-https://github.com/ryanwongsa/Real-time-multi-style-transfer
+https://github.com/gasparramoa/DeepDoors2 <br>
+https://arxiv.org/abs/1705.06830 <br>
+https://github.com/ryanwongsa/Real-time-multi-style-transfer <br>
 
 ## Responsáveis
 - [Luísa de Souza Ferreira](https://github.com/ferreiraluisa)

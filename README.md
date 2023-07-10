@@ -37,7 +37,7 @@ treinamento supervisionado. Foram utilizados modelos propostos para problemas de
 <br>
 &emsp;&emsp; A fim de contornar esse problema, optamos por utilizar [rede pré-treinada com 16 estilos específicos](https://github.com/ryanwongsa/Real-time-multi-style-transfer) para estilização de imagens. Essa abordagem reduziu significativamente o consumo de VRAM para 1.6GB e diminuiu consideravelmente o tempo de execução. Como resultado, conseguimos executar o processo localmente no computador pessoal de um dos membros do grupo.
 <br>
-&emsp;&emsp; Para integrar a técnica YOLO com a transferência de estilo, a fim de estilizar apenas a parte interna de uma porta, utilizamos a segmentação semântica fornecida pelo YOLO e extraímos a máscara correspondente à moldura da porta. Em seguida, por meio de funções em Python, transformamos essa máscara em um polígono convexo fechado. Em seguida, aplicamos o polígono convexo à imagem original, restringindo a estilização à região interna delimitada pela máscara da moldura da porta.
+&emsp;&emsp; Para integrar a técnica YOLO com a transferência de estilo, a fim de estilizar apenas a parte interna de uma porta, utilizamos a segmentação semântica fornecida pelo YOLO e extraímos a máscara correspondente à moldura da porta. Em seguida, por meio de funções em Python, transformamos essa máscara em um polígono convexo fechado e aplicamos o polígono convexo à imagem original, restringindo a estilização à região interna delimitada pela máscara da moldura da porta.
 
 <p align="center">
     <img src="imagens/teste.png" width="400" alt="Foto A">

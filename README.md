@@ -46,7 +46,7 @@ treinamento supervisionado. Foram utilizados modelos propostos para problemas de
 </p>
 
 ## Conclusão 
-&emsp;&emsp; Através da utilização da [rede pré-treinada com 16 estilos específicos](https://github.com/ryanwongsa/Real-time-multi-style-transfer) , fomos capazes de realizar o processo completo de detecção de portas e estilização do interior em uma média de  0.3 segundos de tempo de execução. Essa implementação foi realizada em um computador equipado com uma placa gráfica NVIDIA RTX 3050Ti, o que proporcionou um desempenho otimizado para a tarefa.
+&emsp;&emsp; Através da utilização da [rede pré-treinada com 16 estilos específicos](https://github.com/ryanwongsa/Real-time-multi-style-transfer) , fomos capazes de realizar o processo completo de detecção de portas e estilização do interior em uma média de  0.1 segundos de tempo de execução. Essa implementação foi realizada em um computador equipado com uma placa gráfica NVIDIA RTX 3050Ti, o que proporcionou um desempenho otimizado para a tarefa.
 
 
 ## Referências
